@@ -1,15 +1,11 @@
-var headerTitle=(document.getElementById('header-title'));
-console.log(headerTitle);
-headerTitle.style.border="solid 5px black"
 
-    
-var items=document.getElementsByClassName("title");
+    //to change bgcolor of 3rd element to green
+var items=document.getElementsByClassName("list-group-item");
 console.log(items);
-items[0].style.fontWeight="bold";
-items[0].style.color="green";
+items[2].style.backgroundColor="green";
+//to make all the elements have bold font
+for(var i=0;i<items.length;i++)
+{
+    items[i].style.fontWeight ="bold";
+}
 
-/*git init
-git add project_folder
-git commit -m "Adding new Project"
-git remote add origin https://github.com/yourUsername/yourRepository.git
-git push -u -f origin master
