@@ -1,11 +1,14 @@
 
     //to change bgcolor of 3rd element to green
-var items=document.getElementsByClassName("list-group-item");
-console.log(items);
-items[2].style.backgroundColor="green";
-//to make all the elements have bold font
-for(var i=0;i<items.length;i++)
+var li=document.getElementsByTagName("li");
+console.log(li);
+for(var i=0;i<li.length;i++)
 {
-    items[i].style.fontWeight ="bold";
+    li[i].style.backgroundColor="brown";
+    li[i].style.border="solid 5px black";
 }
 
+var liv=document.getElementsByClassName("kk");
+console.log(liv);
+liv[0].style.color="white";
+liv[0].style.fontWeight="bold";
