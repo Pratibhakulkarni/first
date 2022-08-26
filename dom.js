@@ -8,9 +8,8 @@ console.log(items);
 items[0].style.fontWeight="bold";
 items[0].style.color="green";
 
-//You need to git add my_project to stage your new folder.
- //Then git add my_project/* to stage its contents.
- //git add my_cool_folder
-//git commit -m "I added my_cool_folder"
-//git push
- //gitgit push -u origin mai //git add Then commit what you've staged using git commit and finally push your changes back to the source using git push origin master
+/*git init
+git add project_folder
+git commit -m "Adding new Project"
+git remote add origin https://github.com/yourUsername/yourRepository.git
+git push -u -f origin master
