@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> submit form</title>
+    </head>
+    
+    <body>
+<style>
+    form{
+background-color: pink;
+background-position: center;
+color: cornsilk;
+text-decoration-color: darkgoldenrod;
+text-decoration:solid;
+text-align: center;
+font-family:verdana;
+}
+</style>
+<h> BOOK AN APPOINTMENT</h>
+<form>
+        <form action="action_page.php" onsubmit="submit(event)">
+        <input type="text" id="name" name="name" placeholder="enter your name">  <br> 
+        <label for="name" > </label> <br>
+        <input type="email" id="emailid" name="emailid" placeholder="enter your mail-id">  <br> 
+        <label for="emailid" > </label> <br>
+        <input type="tel" id="phone" name="phone" placeholder="enter your phone number">  <br> 
+        <label for="phone" > </label> <br>
+        <input type="text" id="place" name="place" placeholder="enter your place">  <br> 
+        <label for="place" > </label> <br>
+      <button>submit</button> <br> 
+       </form>
+        <script>
+        
+
+    document.querySelector("form").addEventListener("submit",function(e)
+      {
+e.preventDefault();
+localStorage.setItem("username", document.getElementById("name").value);
+localStorage.setItem("mail", document.getElementById("emailid").value);
+localStorage.setItem("phoneumber", document.getElementById("phone").value);
+localStorage.setItem("place", document.getElementById("place").value);
+},false)
+
+
+
+        </script>
+    </body>
+</html>
